@@ -48,6 +48,7 @@ header:hover {
   background-repeat: no-repeat;
   background-position: 15px;
   transition-duration: .5s;
+  cursor: pointer;
 }
 
 #dark #themeButton {
@@ -103,4 +104,40 @@ header:hover {
 
 #zbiorka div * {
   margin-left: 25px;
+}
+
+#nav {
+  list-style-type: none;
+  float: left;
+}
+
+#nav li {
+  float: left;
+  border: solid;
+  border-width: 3px;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  margin: 25px;
+  border-color: rgb(101, 95, 210);
+  transition: border-color .5s;
+}
+
+#dark #nav li {
+  border-color: rgb(19, 19, 92);
+}
+
+#nav li button {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(122, 116, 223);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .5s;
+  border: none;
+}
+
+#dark #nav li button {
+  background-color: rgb(24, 24, 61);
+  color: white;
 }

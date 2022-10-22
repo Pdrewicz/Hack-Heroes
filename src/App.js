@@ -19,6 +19,11 @@ function App() {
   return (
     <div className="App" id={theme}>
       <header>
+        <ul id='nav'>
+          <li><button>Strona Główna</button></li>
+          <li><button>Zbiórki</button></li>
+          <li><button>A</button></li>
+        </ul>
         <button id='themeButton' onClick={toggleTheme}></button>
       </header>
       <div id='container'>
