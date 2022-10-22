@@ -3,6 +3,8 @@ import './App.css';
 import { useState} from 'react';
 
 import { Zbiorki } from "./components/Zbiorki";
+import { Akcje } from "./components/Akcje";
+import { StronaGlowna } from "./components/StronaGlowna";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -20,9 +22,9 @@ function App() {
     <div className="App" id={theme}>
       <header>
         <ul id='nav'>
-          <li><button>Strona Główna</button></li>
-          <li><button>Zbiórki</button></li>
-          <li><button>A</button></li>
+          <li><button onClick={() => setNav(<StronaGlowna />)}>Strona Główna</button></li>
+          <li><button onClick={() => setNav(<Zbiorki />)}>Zbiórki</button></li>
+          <li><button onClick={() => setNav(<Akcje />)}>A</button></li>
         </ul>
         <button id='themeButton' onClick={toggleTheme}></button>
       </header>
