@@ -8,7 +8,7 @@ import { StronaGlowna } from "./components/StronaGlowna";
 
 function App() {
   const [theme, setTheme] = useState("dark");
-  const [nav, setNav] = useState(<Zbiorki />);
+  const [nav, setNav] = useState(<StronaGlowna />);
 
   function toggleTheme() {
     if (theme == "light") {
