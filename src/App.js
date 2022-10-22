@@ -24,7 +24,7 @@ function App() {
         <ul id='nav'>
           <li><button onClick={() => setNav(<StronaGlowna />)}>Strona Główna</button></li>
           <li><button onClick={() => setNav(<Zbiorki />)}>Zbiórki</button></li>
-          <li><button onClick={() => setNav(<Akcje />)}>A</button></li>
+          <li><button onClick={() => setNav(<Akcje />)}>Akcje</button></li>
         </ul>
         <button id='themeButton' onClick={toggleTheme}></button>
       </header>
