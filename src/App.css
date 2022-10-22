@@ -1,0 +1,106 @@
+.App {
+  position: absolute;
+  width: 100%;
+}
+
+#light {
+  background-color: #ffffff;
+  color: black;
+  transition-duration: .5s;
+}
+
+#dark {
+  background-color: rgb(13, 13, 21);
+  color: white;
+  transition-duration: .5s;
+}
+
+header {
+  width: 90%;
+  height: 150px;
+  background-color: rgb(79, 71, 228);
+  margin-left: 5%;
+  transition: transform .3s, background-color .5s;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transform: translateY(-100px);
+  position: fixed;
+}
+
+header:hover {
+  transform: translateY(0px);
+}
+
+#dark header {
+  background-color: rgb(11, 7, 87);
+}
+
+#themeButton {
+  height: 75px;
+  width: 75px;
+  border: none;
+  border-radius: 50px;
+  float: right;
+  margin: 37.5px;
+  background-color: white;
+  background-image: url(./Images/moon.png);
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: 15px;
+  transition-duration: .5s;
+}
+
+#dark #themeButton {
+  background-color: rgb(13, 13, 21);
+  background-image: url(./Images/moon2.png);
+  transition-duration: .5s;
+}
+
+#container {
+  width: 80%;
+  min-height: 1000px;
+  background-color: rgb(96, 90, 195);
+  margin-left: 10%;
+  transition: background-color .5s;
+}
+
+#dark #container {
+  background-color: rgb(15, 15, 48);
+}
+
+#zbiorka {
+  width: calc(100%-5px);
+  height: 500px;
+  background-color: rgb(121, 116, 202);
+  color: black;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 15px;
+  margin-top: 50px;
+  transition: background-color .5s;
+}
+
+#dark #zbiorka {
+  background-color: rgb(24, 24, 61);
+  color: white;
+}
+
+#zbiorka img {
+  width: 450px;
+  height: 450px;
+  float: left;
+  margin: 25px;
+}
+
+#zbiorka div {
+  float: left;
+  height: 100%;
+  border-left-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+#zbiorka div * {
+  margin-left: 25px;
+}
