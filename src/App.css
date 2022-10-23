@@ -100,10 +100,19 @@ header:hover {
   border-left-style: solid;
   border-width: 5px;
   border-color: black;
+  width: calc(100% - 600px);
 }
 
 #zbiorka div * {
   margin-left: 25px;
+}
+
+#zbiorka div h1 {
+  font-size: 2vw;
+}
+
+#zbiorka div p {
+  font-size: 1.5vw;
 }
 
 #nav {
