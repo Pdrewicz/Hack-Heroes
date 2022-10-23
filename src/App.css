@@ -91,7 +91,12 @@ header:hover {
   width: 450px;
   height: 450px;
   float: left;
-  margin: 25px;
+  margin: 22.5px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: solid;
+  border-width: 5px;
+  border-color: black;
 }
 
 #zbiorka div {
