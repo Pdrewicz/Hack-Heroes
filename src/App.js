@@ -32,6 +32,11 @@ function App() {
         <div style={{ marginTop: 50 }}></div>
         {nav}
       </div>
+      <div id='info'>
+        <h2>Autorzy :</h2>
+        <b>Patryk Drewicz</b><br />
+        <b>Patryk Dwornicki</b>
+      </div>
     </div>
   );
 }

@@ -25,6 +25,7 @@ header {
   border-bottom-right-radius: 25px;
   transform: translateY(-100px);
   position: fixed;
+  z-index: 2;
 }
 
 header:hover {
@@ -63,6 +64,8 @@ header:hover {
   background-color: rgb(96, 90, 195);
   margin-left: 10%;
   transition: background-color .5s;
+  position: relative;
+  z-index: 1;
 }
 
 #dark #container {
@@ -154,4 +157,42 @@ header:hover {
 #dark #nav li button {
   background-color: rgb(24, 24, 61);
   color: white;
+}
+
+#stronaGlowna div {
+  width: 80%;
+  margin-left: 10%;
+  border: solid;
+  border-width: 5px;
+  border-radius: 25px;
+}
+
+#stronaGlowna div p {
+  font-size: 2vw;
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+
+#info {
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 150px;
+  left: 83%;
+  z-index: 0;
+  height: 500px;
+  width: 175px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition-duration: .5s;
+}
+
+#light #info {
+  background-color: grey;
+  color: white;
+}
+
+#info:hover {
+  transform: translateX(75%);
 }
